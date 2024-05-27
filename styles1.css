@@ -21,8 +21,6 @@ header {
     justify-content: space-between; /* Align logo and nav to opposite sides */
     align-items: center; /* Align items vertically */
 }
-header nav ul{
-    display: inline;
 .logo img {
     width: 100px; /* Adjust the width of the logo as needed */
 }
