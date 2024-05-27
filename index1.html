@@ -1,49 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
-    <link rel="stylesheet" href="styles1.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">About</a></li>
-                <li id="contact"><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("img/background.jpg"); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
 
-    <div class="main-page">
-        <div class="logo">
-            
-        </div>
-        <div class="container">
-            <h2>Welcome to Our Courses</h2>
-            <div class="course-columns">
-                <div class="course">
-                    <h3>7 days ai course</h3>
-                    <p>Description of Course 1</p>
-                    <a href="#">Enroll Now</a>
-                </div>
-                <div class="course">
-                    <h3>Course 2</h3>
-                    <p>Description of Course 2</p>
-                    <a href="#">Enroll Now</a>
-                </div>
-                <div class="course">
-                    <h3>Course 3</h3>
-                    <p>Description of Course 3</p>
-                    <a href="#">Enroll Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
+img {
+    opacity: 1;
+}
+header {
+    /* Semi-transparent background for better readability */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 3px black;
+    background-color: rgba(255, 255, 255, 0.8); 
+    display: flex;
+    justify-content: space-between; /* Align logo and nav to opposite sides */
+    align-items: center; /* Align items vertically */
+}
+.logo img {
+    width: 100px; /* Adjust the width of the logo as needed */
+}
+nav {
+    /* Keep navigation centered */
+    flex: 1; /* Let it grow to take remaining space */
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+.main-page {
+    padding: 50px 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.logo img {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.course-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.course {
+    width: calc(33.33% - 20px);
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact {
+    float: right;
+    margin-top: 0px;
+    padding: 10px 0px;
+    background-color: royalblue;
+    color: #ffffff;
+    border-radius: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+#contact:hover {
+    background-color: #0056b3; /* Darker shade of royal blue */
+}
