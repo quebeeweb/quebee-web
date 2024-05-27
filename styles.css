@@ -12,35 +12,38 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Adjust as needed */
+  height: 100vh;
 }
 
 img {
-  width: 50%; /* Adjust size as needed */
-  max-width: 200px; /* Limit size for smaller screens */
+  width: 70%; /* Increase the width of the image to 70% of its container */
+  max-width: 300px; /* Increase the maximum width of the image */
   margin-bottom: 20px;
 }
 
 button {
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 15px 30px; /* Increase padding for the button */
+  font-size: 24px; /* Increase font size of the button text */
   border: none;
   background-color: rgb(52, 201, 64);
   color: #eeeeee;
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* Media query for screens with a maximum width of 600px (small screens) */
 @media screen and (max-width: 600px) {
   .welcome-page {
       padding: 20px;
   }
 
   img {
-      width: 80%;
+      width: 90%; /* Adjust width for smaller screens */
+      max-width: 250px; /* Adjust maximum width for smaller screens */
       margin-bottom: 10px;
   }
 
   button {
-      font-size: 14px;
+      font-size: 20px; /* Adjust font size for smaller screens */
   }
 }
