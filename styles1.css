@@ -2,14 +2,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url("img/background.jpg"); /* Replace with your background image */
+    background-image: url("background.jpg"); /* Replace with your background image */
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
 img {
-    opacity: 1;
+    opacity: 0.1;
 }
 header {
     /* Semi-transparent background for better readability */
@@ -17,18 +17,8 @@ header {
     text-align: center;
     box-shadow: 0 0 3px black;
     background-color: rgba(255, 255, 255, 0.8); 
-    display: flex;
-    justify-content: space-between; /* Align logo and nav to opposite sides */
-    align-items: center; /* Align items vertically */
 }
-.logo img {
-    width: 100px; /* Adjust the width of the logo as needed */
-}
-nav {
-    /* Keep navigation centered */
-    flex: 1; /* Let it grow to take remaining space */
-    text-align: center;
-}
+
 nav ul {
     list-style-type: none;
     padding: 0;
